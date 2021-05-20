@@ -1,0 +1,72 @@
+body {
+    font-family: $parafos-font-family;
+}
+
+trix-editor {
+    min-height: 300px !important;
+    height: auto !important;
+}
+
+.bg-primary .navbar-brand {
+    color: white;
+    font-family: $font-family-sans-serif;
+    font-size: 1.5rem;
+    &:hover {
+        color: white;
+    }
+}
+
+.icono {
+    width: 30px;
+}
+
+.categorias-bg {
+    background-color: #fff;
+    .nav-link {
+        color: #222 !important;
+        display: inline-block;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        font-size: 1.2rem !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            transition: transform 0.5s ease;
+        }
+        &:before {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: #ed4646;
+            transform: translateX(-100%);
+        }
+        &:hover:before {
+            transform: translateX(0);
+        }
+    }
+}
+
+.hero-categorias {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(70, 70, 70, 0.4),
+            rgba(53, 53, 53, 0.571)
+        ),
+        url("../images/bgimagen.jpg");
+    height: 30rem;
+    background-size: cover;
+    background-position: top center;
+    .texto-buscar {
+        p {
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    }
+}
